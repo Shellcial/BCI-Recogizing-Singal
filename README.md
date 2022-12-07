@@ -16,70 +16,28 @@ Instead, Perform BCI have the advantage below:
 
 ## How is it used?
 
-To play VR game at home, this sounds incredible exciting 10 years before, but it just requires 400 USD to buy a Oculus Quest 2. Same for BCI, this may sound insane for the past few years, but as the AI solution of physical detection enhances, BCI development is also developing although less people pay attention on this.
-
-for the user, they need to buy a biosensing like the upcoming [Galea](https://openbci.com/), so that their brain singal can be detected. Then, the recongizing solution will be performed and print out the user intended events, these event command will be sent to the game to perform.
-
-https://galea.co/
-For starter, buying a start kit from OpeneBCI
+In recent year, individual BCI device is starting to be mature, for both the user or developer, they need to buy a biosensing gadget like the upcoming [Galea](https://openbci.com/), so that their brain singal can be detected. Then, an AI model should be built and the recongizing solution will be performed and print out the user intended events, these event command will be sent to the game. For starter, buying a [start kit from OpeneBCI](https://shop.openbci.com/products/bundle2) can start to receive data and develop the AI model too. Here is a demonstration using the device (https://www.youtube.com/watch?v=Dgo7F-lpyYE&t=397s)
 
 Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
-
-
 ## Data sources and AI methods
-The data comes from users/participants connecting BCI device and performing game activity with four cases.
+The data comes from users/participants connecting BCI device and performing game activity with four cases, with camera capturing player physical behavior to help later procedure such as triming out specific data of player doing specific action so that the data can be 
 1. Using physical devices to play a game
 2. Thinking you are going to use physical device to play the game, while you don't perform any physical movement
-3. Thinking you are playing the game, doing which action and which action.
-4. After players are familar with the game, they need to see other players playing the game, in a kind of bad or not perfect mannar, it leads the participants to think what events they will perform at the moment when they are seeing the players playing.
+3. Thinking you are playing the game, conceptually thinking doing certain actions without considering the physical device input.
+4. After players are familar with the game, they need to see other players playing the game, it leads the participants to think what events they will perform at the moment when they are seeing the players playing.
 
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+These experiments aim to capture two different data individually. Since when player is playing, they will conceptually want the game character to move and they  perform phyiscal movement on keyboard and mouse. These behaviors may behave differently on brain signal so different experiments which separate and combining them is also needed.
 
 ## Challenges
-
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+* brain is super complicated and there are many details we don't know even in biological field
+* noise is still significantly large and the signal between performing differnt actions may not be distinguish
+* it is difficult to have a standard classification of one brain signal to one action since different people mind may perform differently
 
 ## What next?
-
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
-
+* include different game and different ranges of people to perform same experiments
+* using different algorithm and AI model to see any improvement of classifying features
 
 ## Acknowledgments
-
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* sources of inspiration
+* [OpenBCI](https://www.youtube.com/@OpenBCI-official/featured), demonstrating the usage and potential of BCI device
