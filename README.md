@@ -1,5 +1,7 @@
 # BCI-Recogizing-Singal
 
+This would be a very difficult project to me and I estimate it will at least take me 3 years for some mockup to come out, if some framework comes out, it would fasten my step as I don't need to do and learn everything from scratch. But still, learning the true algorithm behind, or at least knowing more details on that would be one of my wishes to accomplish.
+
 ## Summary
 
 This is a game specific project, using affordable devices to receive brain's electrical activity during human performing specific events in mind, then use unsupervised learning to classify the signal in order to figure out signal pattern occuring when performing specific events, then we can detect the pattern to indicate what the person want to do, so he just needs to "think" and the computer can read his mind and perform relative tasks in game.
